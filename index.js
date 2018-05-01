@@ -2483,7 +2483,7 @@ tracking.ColorTracker.registerColor('white', function(r, g, b) {
 });
 
 tracking.ColorTracker.registerColor('gray', function(r, g, b) {
-  if (r > 160 && r < 225 && g > 160 && g < 225 && b > 160 && b < 225 ) {
+  if (r > 160 && r < 190 && g > 160 && g < 190 && b > 160 && b < 190 ) {
     if (r - g == 0 && g - b == 0 ){
       return true;
     }
@@ -2507,7 +2507,7 @@ tracking.ColorTracker.registerColor('black', function(r, g, b) {
   return false;
 });
 
-var colors = new tracking.ColorTracker(['magenta', 'cyan', 'yellow', 'green', 'white', 'black']);
+var colors = new tracking.ColorTracker(['magenta', 'cyan', 'yellow', 'green', 'white', 'black', 'gray']);
 colors.setMinDimension(10);
 
 colors.on('track', function(event) {
